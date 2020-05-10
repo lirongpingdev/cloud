@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: nacos-simple-demo
+  cloud:
+    nacos:
+      config:
+         server-addr: 127.0.0.1:8848
+         file-extension: yaml
+         ##namespace: 取public的不用写
+         group: DEFAULT_GROUP
+server:
+  port: 8010

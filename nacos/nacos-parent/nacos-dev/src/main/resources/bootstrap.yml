@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dev-test-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.105:8848,192.168.1.106:8848,192.168.1.107:8848
+        file-extension: yaml
+        namespace: d114bbd6-b68b-48fa-b81c-4717cb319a1d    #########自定议namespace
+        group: TEST_GROUP
+server:
+  port: 8011

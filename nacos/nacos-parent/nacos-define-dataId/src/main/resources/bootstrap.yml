@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: dev-test-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: d114bbd6-b68b-48fa-b81c-4717cb319a1d    #########自定议namespace
+########在DEFAULT_GROUP 不支持刷新
+        dev-config[0]:
+            data-id: dev-config-define01.properties
+########在GLOB_GROUP 不支持刷新
+        dev-config[1]:
+            data-id: dev-config-define02.properties
+            group: GLOB_GROUP
+########在REFRESH_GROUP 支持刷新
+        dev-config[2]:
+            data-id: dev-config-define03.properties
+            group: REFRESH_GROUP
+            refresh: true
+server:
+  port: 8012

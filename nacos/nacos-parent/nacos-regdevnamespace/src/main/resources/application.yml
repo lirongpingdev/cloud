@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: nacos-reg-dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+        namespace: d114bbd6-b68b-48fa-b81c-4717cb319a1d
+server:
+  port: 8017
+logging:
+  level:
+    root: info
+    org.springframework: info
