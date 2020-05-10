@@ -1,0 +1,19 @@
+#debug: false
+spring:
+  application:
+#提供eurekaserver的名称
+    name: apollo-client
+server:
+  port: 8082
+  servlet:
+    ####context-path: /
+    context-path: /apollo
+eureka:
+  instance:
+#提供别的服务调用的名称
+    appname: apollo-client
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.105:8081/eureka/
+apollo:
+  meta: http://192.168.1.106:8080,http://192.168.1.107:8080

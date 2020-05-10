@@ -1,0 +1,21 @@
+#debug: true
+#spring:
+#  application:
+##提供eurekaserveer的名称
+#    name: cloud-platform-consumer
+server:
+  port: 8001
+eureka:
+  instance:
+#提供别的服务调用的名称
+    appname: cloud-platform-consumer
+#  client:
+#    serviceUrl:
+#      defaultZone: http://eureka9001:9001/eureka/,http://eureka9002:9002/eureka/,http://eureka9003:9003/eureka/
+logging:
+  level:
+    cloud.platform.consumer.service.impl: DEBUG
+    root: info
+    com.memorynotfound: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: INFO

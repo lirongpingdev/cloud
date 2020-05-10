@@ -1,0 +1,7 @@
+#debug: true
+spring:
+  application:
+#提供eurekaserveer的名称
+    name: cloud-hystrix
+server:
+  port: 7001

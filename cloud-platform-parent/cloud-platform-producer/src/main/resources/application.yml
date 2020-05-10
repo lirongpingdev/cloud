@@ -1,0 +1,17 @@
+#debug: false
+spring:
+  application:
+#提供eurekaserver的名称
+    name: cloud-platform-producer
+server:
+  port: 8002
+  servlet:
+    ####context-path: /
+    context-path: /producercontext
+eureka:
+  instance:
+#提供别的服务调用的名称
+    appname: cloud-platform-producer
+  client:
+    serviceUrl:
+      defaultZone: http://eureka9001:9001/eureka/,http://eureka9002:9002/eureka/,http://eureka9003:9003/eureka/
