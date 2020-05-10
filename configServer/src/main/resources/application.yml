@@ -1,0 +1,24 @@
+#提供configserver的名称
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+        #####读取git地址
+          uri: https://gitee.com/lirongping/project1.git
+          search-paths: 
+      ######分支环境
+      label: master
+server:
+  port: 6001
+  servlet:
+    context-path: /
+#提供别的服务调用的名称
+eureka:
+  instance:
+    appname: config-server
+  client:
+    serviceUrl:
+      defaultZone: http://eureka9001:9001/eureka/,http://eureka9002:9002/eureka/,http://eureka9003:9003/eureka/
