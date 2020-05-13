@@ -18,7 +18,7 @@ public class FeignBasicAuthRequestInterceptor  implements RequestInterceptor {
 		}
 
 		HttpServletRequest request = servletRequestAttributes.getRequest();
-		//template.header("Authorization", request.getHeader("Authorization"));
-		template.header("Authorization", "fdsafdgd");
+		template.header("Authorization", request.getHeader("Authorization"));
+		//template.header("Authorization", "fdsafdgd");
 	}
 }
