@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: admin-client2
+  boot:
+    admin:
+      client:
+        url: http://localhost:8006
+server:
+  port: 8008
+  servlet:
+    context-path: /client2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
