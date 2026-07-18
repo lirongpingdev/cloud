@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 	<!---admin-client2-->
+	<!------dev加代码 client2---------->
   <parent>
     <groupId>cloud.platform</groupId>
     <artifactId>cloud-platform-parent</artifactId>
@@ -18,5 +19,5 @@
 			<version>2.1.5</version>
 		</dependency>
 	</dependencies>
-	
+	<!------dev加代码 client2---------->
 </project>
