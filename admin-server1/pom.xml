@@ -8,6 +8,7 @@
 		<artifactId>cloud-platform-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<--这是在master分支修改的代码admin-server1-->
 	<artifactId>admin-server1</artifactId>
 	<dependencies>
 		<dependency>
