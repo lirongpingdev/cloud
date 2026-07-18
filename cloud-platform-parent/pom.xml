@@ -30,7 +30,7 @@
 		<module>gateway</module>
 		<module>apollo-clinet</module>
 	</modules>
-
+<!--dev加代码  springCloud依赖   开始--->
 
 	<!-- JAR 依赖 -->
 	<dependencyManagement>
